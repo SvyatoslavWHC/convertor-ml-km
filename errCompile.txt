@@ -1,0 +1,18 @@
+mileinkillometers.cpp: В функции «int main(int, const char**)»:
+mileinkillometers.cpp:21:40: ошибка: invalid conversion from «const char**» to «char**» [-fpermissive]
+   21 |     int countOfSimbol  = coutingSimbol(&*argv);
+      |                                        ^~~~~~
+      |                                        |
+      |                                        const char**
+mileinkillometers.cpp:9:26: замечание:   при инициализации 1 -го аргумента «int coutingSimbol(char**)»
+    9 | int coutingSimbol(char **arguments);
+      |                   ~~~~~~~^~~~~~~~~
+mileinkillometers.cpp:36:4: ошибка: переход по case-метке
+   36 |    default:
+      |    ^~~~~~~
+mileinkillometers.cpp:22:11: замечание:   пересекает инициализацию «char* secondArgument»
+   22 |     char* secondArgument = new char [countOfSimbol];
+      |           ^~~~~~~~~~~~~~
+mileinkillometers.cpp:21:9: замечание:   пересекает инициализацию «int countOfSimbol»
+   21 |     int countOfSimbol  = coutingSimbol(&*argv);
+      |         ^~~~~~~~~~~~~
